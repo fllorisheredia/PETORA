@@ -1,0 +1,40 @@
+<div class="drawer lg:drawer-open h-screen">
+  <input id="main-drawer" type="checkbox" class="drawer-toggle" />
+
+  <!-- Contenido principal -->
+  <div class="drawer-content flex flex-col">
+
+    <!-- Navbar -->
+    <div class="w-full navbar bg-base-100 shadow-md px-4">
+      <div class="flex-none lg:hidden">
+        <label for="main-drawer" class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+      </div>
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl">🐾 Petora</a>
+      </div>
+    </div>
+
+    <!-- Contenido de las páginas -->
+    <div class="flex-1 p-4 overflow-y-auto bg-base-200">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="drawer-side">
+    <label for="main-drawer" class="drawer-overlay"></label>
+    <ul class="menu p-4 w-64 min-h-full bg-base-100 text-base-content">
+      <li><a routerLink="/usuario/dashboard" routerLinkActive="active">🏠 Dashboard</a></li>
+      <li><a routerLink="/usuario/mascotas" routerLinkActive="active">🐶 Mis Mascotas</a></li>
+      <li><a routerLink="/usuario/productos" routerLinkActive="active">🛒 Buscar Productos</a></li>
+      <li><a routerLink="/usuario/urgencias" routerLinkActive="active">🚨 Servicios de Urgencia</a></li>
+      <li><a routerLink="/usuario/consulta-online" routerLinkActive="active">💬 Consultar Veterinario</a></li>
+    </ul>
+  </div>
+</div>

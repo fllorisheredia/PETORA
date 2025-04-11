@@ -1,0 +1,52 @@
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+  <!-- Bienvenida -->
+  <div class="card bg-base-100 shadow-md">
+    <div class="card-body">
+      <h2 class="card-title">👋 ¡Bienvenido a Petora!</h2>
+      <p>Nos alegra verte de nuevo. Cuida de tus mascotas y descubre nuevas funciones.</p>
+    </div>
+  </div>
+
+  <!-- Mascotas registradas -->
+  <div class="card bg-base-100 shadow-md">
+    <div class="card-body">
+      <h2 class="card-title">🐶 Tus Mascotas</h2>
+      <p>Aún no has registrado ninguna mascota.</p>
+      <div class="card-actions justify-end">
+        <a routerLink="/usuario/mascotas" class="btn btn-primary btn-sm">Registrar Mascota</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Productos recomendados -->
+  <div class="card bg-base-100 shadow-md">
+    <div class="card-body">
+      <h2 class="card-title">🛒 Productos recomendados</h2>
+      <p>Explora productos pensados para tus mascotas.</p>
+      <div class="card-actions justify-end">
+        <a routerLink="/usuario/productos" class="btn btn-secondary btn-sm">Ver productos</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consultar veterinario -->
+  <div class="card bg-base-100 shadow-md">
+    <div class="card-body">
+      <h2 class="card-title">💬 Consulta veterinaria</h2>
+      <p>¿Tienes alguna duda? Consulta con un veterinario online.</p>
+      <div class="card-actions justify-end">
+        <a routerLink="/usuario/consulta-online" class="btn btn-accent btn-sm">Ir a consulta</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recompensas -->
+  <div class="card bg-base-100 shadow-md lg:col-span-2">
+    <div class="card-body">
+      <h2 class="card-title">🏆 Tus recompensas</h2>
+      <p>Aquí aparecerán tus puntos y logros dentro de la app.</p>
+      <progress class="progress progress-success w-full" value="20" max="100"></progress>
+      <p class="text-sm text-gray-500">Has acumulado 20 de 100 puntos</p>
+    </div>
+  </div>
+</div>
