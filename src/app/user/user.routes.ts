@@ -11,6 +11,8 @@ import { MascotasComponent } from "./mascotas/mascotas.component";
 import { ProductosComponent } from "./productos/productos.component";
 import { UrgenciasComponent } from "./urgencias/urgencias.component";
 import { UserLayoutComponent } from "./user-layout/user-layout.component";
+import { UserPageComponent } from "./pages/user-page/user-page.component";
+import { ContactPageComponent } from "../pages/contact-page/contact-page.component";
 
 
 
@@ -19,11 +21,12 @@ export const userRoutes: Routes = [
   //Rutas para el usuario normal (user)
   {
     path: '',
-    component: UserLayoutComponent,
+    component: UserPageComponent,
     children: [
+
       {
         path: 'usuario',
-        component: DashboardComponent,
+        component: UserPageComponent,
       },
       {
         path: 'dashboard',
@@ -44,6 +47,11 @@ export const userRoutes: Routes = [
       {
         path: 'consulta-online',
         component: ConsultaOnlineComponent,
+      },
+
+      {
+        path: 'contacto',
+        component: ContactPageComponent,
       },
       // {
       //   path: 'perfil',
