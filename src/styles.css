@@ -4,3 +4,19 @@
 
 @plugin "daisyui" {
 }
+
+@layer base {
+  @font-face {
+    font-family: "WinkyRough";
+    src: url("../src/assets/fonts/winkyrough/WinkyRough-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+}
+
+
+body{
+  font-family: 'WinkyRough', sans-serif;
+}
+

@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
+    fontFamily: {
+      'winky':['WinkyRough','sans-serif']
+    },
     extend: {},
   },
   plugins: [require("daisyui")],
